@@ -1,0 +1,12 @@
+node_modules/
+out/
+
+# reference/ is the unpacked asset zip. Only what the films are built from is tracked:
+# the brand brief and the QA captures of the app. The older renders stay local.
+reference/*
+!reference/zinkerp-video-v3/
+reference/zinkerp-video-v3/*
+!reference/zinkerp-video-v3/main-prompt-motion.md
+!reference/zinkerp-video-v3/qa-capturas/
+
+.DS_Store

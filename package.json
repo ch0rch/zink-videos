@@ -1,0 +1,31 @@
+{
+  "name": "zink-videos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Films de producto de ZinkERP en Remotion.",
+  "scripts": {
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "brand": "node scripts/extract-brand.mjs",
+    "audio": "node scripts/make-score.mjs",
+    "stills": "node scripts/render-stills.mjs",
+    "render": "node scripts/render-final.mjs",
+    "finish": "node scripts/finish.mjs",
+    "film": "node scripts/render-final.mjs && node scripts/make-score.mjs && node scripts/finish.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.546",
+    "@remotion/cli": "4.0.546",
+    "@remotion/fonts": "4.0.546",
+    "@remotion/renderer": "4.0.546",
+    "react": "19",
+    "react-dom": "19",
+    "remotion": "4.0.546"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
